@@ -1,11 +1,38 @@
 import React from "react";
 
-import Document, { Html, Main, NextScript, Head } from "next/document";
+import Document, {
+  Html,
+  Main,
+  NextScript,
+  Head,
+  DocumentContext,
+  DocumentInitialProps,
+} from "next/document";
 
 import createEmotionServer from "@emotion/server/create-instance";
 import { cache } from "@emotion/css";
 
-class MyDocument extends Document {
+export default class MyDocument extends Document {
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
+    const page = await ctx.renderPage();
+    const { css, ids } = await renderStatic(page.html);
+    const initialProps = await Document.getInitialProps(ctx);
+    return {
+      ...initialProps,
+      // @ts-ignore
+      styles: (
+        <React.Fragment>
+          {initialProps.styles}
+          <style
+            data-emotion={`css ${ids.join(" ")}`}
+            dangerouslySetInnerHTML={{ __html: css }}
+          />
+        </React.Fragment>
+      ),
+    };
+  }
   render() {
     return (
       <Html lang="en" className="theme-dark">
@@ -29,23 +56,3 @@ const renderStatic = async (html?: string) => {
 
   return { html, ids, css };
 };
-
-MyDocument.getInitialProps = async (ctx) => {
-  const page = await ctx.renderPage();
-  const { css, ids } = await renderStatic(page.html);
-  const initialProps = await Document.getInitialProps(ctx);
-  return {
-    ...initialProps,
-    styles: (
-      <React.Fragment>
-        {initialProps.styles}
-        <style
-          data-emotion={`css ${ids.join(" ")}`}
-          dangerouslySetInnerHTML={{ __html: css }}
-        />
-      </React.Fragment>
-    ),
-  };
-};
-
-export default MyDocument;
