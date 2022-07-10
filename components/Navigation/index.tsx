@@ -17,19 +17,17 @@ export const Navigation: FC<Props> = (props) => {
   const { isMobile } = useWindowSize();
   return (
     <>
-      {isMobile ? (
-        <HeaderMobile>
-          <NavItemMobile url="/" name={"Home"} />
-        </HeaderMobile>
-      ) : (
-        <HeaderDesktop>
-          <NavItemDesktop
-            url={"/"}
-            name={"Home"}
-            active={props.activePage === "Home"}
-          />
-        </HeaderDesktop>
-      )}
+      <HeaderMobile>
+        <NavItemMobile url="/" name={"Home"} />
+      </HeaderMobile>
+
+      <HeaderDesktop>
+        <NavItemDesktop
+          url={"/"}
+          name={"Home"}
+          active={props.activePage === "Home"}
+        />
+      </HeaderDesktop>
     </>
   );
 };
