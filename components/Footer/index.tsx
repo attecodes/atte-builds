@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 import Link from "next/link";
 
-import { InstagramIcon } from "lib/Icons";
+import { InstagramIcon, GithubIcon } from "lib/Icons";
 
 import * as styles from "./styles";
 
@@ -23,6 +23,9 @@ export const Footer: FC = () => (
       <nav className={styles.footer_icons}>
         <a href="https://www.instagram.com/attemyllykoski">
           <InstagramIcon />
+        </a>
+        <a href="https://github.com/attecodes">
+          <GithubIcon />
         </a>
       </nav>
     </div>
