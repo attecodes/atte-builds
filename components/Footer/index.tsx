@@ -13,6 +13,12 @@ export const Footer: FC = () => (
         <Link href="/">
           <a>Home</a>
         </Link>
+        <Link href="/carpentry">
+          <a>Carpentry</a>
+        </Link>
+        <Link href="/tech">
+          <a>Tech</a>
+        </Link>
       </nav>
       <nav className={styles.footer_icons}>
         <a href="https://www.instagram.com/attemyllykoski">

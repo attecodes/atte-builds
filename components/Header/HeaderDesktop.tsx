@@ -6,7 +6,7 @@ import * as styles from "./styles";
 
 interface Props {
   buttons?: JSX.Element[];
-  children?: JSX.Element;
+  children?: JSX.Element | JSX.Element[];
 }
 
 export const HeaderDesktop: FC<Props> = (props) => {
