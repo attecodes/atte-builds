@@ -28,12 +28,13 @@ export const section = css`
   grid-column: main;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   align-items: center;
   .grid {
     display: grid;
-    gap: 5rem;
+    gap: 2rem;
     ${breakpoints.large} {
+      gap: 4rem;
       grid-template-columns: 1fr 1fr;
     }
     .start {

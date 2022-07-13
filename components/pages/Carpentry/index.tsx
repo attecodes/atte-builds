@@ -1,12 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 
-import { NextPage } from "next";
-
-import { Section, Text, PageHead, Navigation, Footer } from "components";
+import { Section, Text, PageHead, Navigation, Footer, Card } from "components";
+import { CarpentryProjects } from "lib/queries";
 
 import * as styles from "./styles";
 
-export const Carpentry: NextPage = () => {
+type Props = {
+  carpentryProjects: CarpentryProjects;
+};
+
+export const Carpentry: FC<Props> = (props) => {
   return (
     <>
       <PageHead
@@ -15,12 +18,22 @@ export const Carpentry: NextPage = () => {
         metaDescription="A showcase of Atte's carpentry work"
       />
       <Navigation activePage="Carpentry" />
-      <Section variant="gray" fillViewport={true}>
-        <main className={styles.main}>
-          <div className="start">
-            <Text t="h1">Carpentry</Text>
-          </div>
-        </main>
+      <Section variant="gray" firstSection>
+        <div className={styles.container}>
+          <section className={styles.cardsSection}>
+            <Text t="h3" className={styles.articles}>
+              Atte&apos;s latest carpentry projects
+            </Text>
+            <div className={styles.cards}>
+              {props.carpentryProjects.map((carpentryProject) => (
+                <Card
+                  key={carpentryProject.slug}
+                  carpentryProject={carpentryProject}
+                />
+              ))}
+            </div>
+          </section>
+        </div>
       </Section>
 
       <Footer />

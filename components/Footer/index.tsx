@@ -21,13 +21,25 @@ export const Footer: FC = () => (
         </Link>
       </nav>
       <nav className={styles.footer_icons}>
-        <a href="https://www.instagram.com/attemyllykoski">
+        <a
+          href="https://www.instagram.com/attemyllykoski"
+          rel="noopener noreferrer"
+          target="blank"
+        >
           <InstagramIcon />
         </a>
-        <a href="https://www.linkedin.com/in/itslikelatte/">
+        <a
+          href="https://www.linkedin.com/in/itslikelatte/"
+          rel="noopener noreferrer"
+          target="blank"
+        >
           <LinkedInIcon />
         </a>
-        <a href="https://github.com/attecodes">
+        <a
+          href="https://github.com/attecodes"
+          rel="noopener noreferrer"
+          target="blank"
+        >
           <GithubIcon />
         </a>
       </nav>
