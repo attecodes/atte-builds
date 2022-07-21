@@ -24,3 +24,7 @@
 
 # Typescript
 *.tsbuildinfo
+
+# These are messing up the Vercel build and no need to have them remote when I can deploy Sanity localy
+/sanity.cli.ts
+/sanity.config.ts
