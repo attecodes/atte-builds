@@ -15,7 +15,7 @@ export const Tech: NextPage = () => {
         metaDescription="A showcase of Atte's tech related work"
       />
       <Navigation activePage="Tech" />
-      <Section variant="gray" fillViewport={true}>
+      <Section variant="gray" fillViewport={true} firstSection={true}>
         <main className={styles.main}>
           <div className="start">
             <Text t="h1">Tech</Text>

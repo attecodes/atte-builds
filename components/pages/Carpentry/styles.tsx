@@ -18,6 +18,12 @@ export const cardsSection = css`
 
 export const articles = css`
   grid-column: full;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  a {
+    transform: scale(0.6);
+  }
 `;
 
 export const cards = css`
@@ -30,10 +36,10 @@ export const cards = css`
   ${breakpoints.medium} {
     grid-template-columns: 1fr 1fr;
   }
+  row-gap: 2.6rem;
+  grid-column-gap: 2.6rem;
 
   ${breakpoints.large} {
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 2.6rem;
-    grid-column-gap: 2.6rem;
   }
 `;

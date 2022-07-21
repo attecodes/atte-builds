@@ -1,6 +1,17 @@
 import React, { FC } from "react";
 
-import { Section, Text, PageHead, Navigation, Footer, Card } from "components";
+import Link from "next/link";
+
+import {
+  Section,
+  Text,
+  PageHead,
+  Navigation,
+  Footer,
+  Card,
+  ButtonPrimary,
+} from "components";
+
 import { CarpentryProjects } from "lib/queries";
 
 import * as styles from "./styles";
@@ -15,15 +26,21 @@ export const Carpentry: FC<Props> = (props) => {
       <PageHead
         title="Atte Builds"
         mediaTitle="Atte Builds"
-        metaDescription="A showcase of Atte's carpentry work"
+        metaDescription="A showcase of Atte's carpentry related work"
       />
       <Navigation activePage="Carpentry" />
       <Section variant="gray" firstSection fillViewport>
         <div className={styles.container}>
           <section className={styles.cardsSection}>
-            <Text t="h4" className={styles.articles}>
-              Latest projects
-            </Text>
+            <div className={styles.articles}>
+              <Text t="h4">Carpentry</Text>
+              <ButtonPrimary
+                label="Tech Projects"
+                href="/tech"
+                // @ts-ignore
+                link={Link}
+              />
+            </div>
             <div className={styles.cards}>
               {props.carpentryProjects.map((carpentryProject) => (
                 <Card
