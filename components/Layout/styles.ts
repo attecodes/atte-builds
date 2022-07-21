@@ -31,7 +31,7 @@ export const section = css`
   }
   &.fillViewport {
     min-height: 100vh;
-    align-items: center;
+    align-items: flex-start;
   }
   ${breakpoints.large} {
     padding: 12.2rem 0rem;

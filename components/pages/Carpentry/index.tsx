@@ -18,11 +18,11 @@ export const Carpentry: FC<Props> = (props) => {
         metaDescription="A showcase of Atte's carpentry work"
       />
       <Navigation activePage="Carpentry" />
-      <Section variant="gray" firstSection>
+      <Section variant="gray" firstSection fillViewport>
         <div className={styles.container}>
           <section className={styles.cardsSection}>
-            <Text t="h3" className={styles.articles}>
-              Atte&apos;s latest carpentry projects
+            <Text t="h4" className={styles.articles}>
+              Latest projects
             </Text>
             <div className={styles.cards}>
               {props.carpentryProjects.map((carpentryProject) => (

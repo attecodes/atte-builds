@@ -13,15 +13,16 @@ export const cardsSection = css`
   grid-column: main;
   padding-bottom: 5rem;
   row-gap: 2.4rem;
+  grid-template-columns: inherit;
 `;
 
 export const articles = css`
-  grid-column: main;
+  grid-column: full;
 `;
 
 export const cards = css`
   display: grid;
-  grid-column: main;
+  grid-column: full;
   grid-template-columns: 1fr;
   .cardsSection {
     grid-column: full;

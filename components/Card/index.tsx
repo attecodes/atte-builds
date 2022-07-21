@@ -37,8 +37,8 @@ export function Card(props: CardProps) {
             <Image
               src={props.carpentryProject.imageUrl || "/logo_dark.png"}
               alt={props.carpentryProject.title}
-              objectFit="cover"
               layout="fill"
+              objectFit="cover"
             />
           </div>
         </a>
