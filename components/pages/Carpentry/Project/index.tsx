@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { CarpentryProject } from "lib/queries";
+import { Project } from "lib/queries";
+
 import {
   Text,
   BlockContentRenderer,
@@ -15,7 +16,7 @@ import {
 import * as styles from "./styles";
 
 interface CarpentryProjectProps {
-  carpentryProject?: CarpentryProject;
+  carpentryProject?: Project;
 }
 
 export const ProjectPage = (props: CarpentryProjectProps) => {

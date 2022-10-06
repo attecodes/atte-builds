@@ -1,12 +1,26 @@
-import React from "react";
+import React, { FC } from "react";
 
-import { NextPage } from "next";
+import Link from "next/link";
 
-import { Section, Text, PageHead, Navigation, Footer } from "components";
+import {
+  Section,
+  Text,
+  PageHead,
+  Navigation,
+  Footer,
+  Card,
+  ButtonPrimary,
+} from "components";
+
+import { TechProjects } from "lib/queries";
 
 import * as styles from "./styles";
 
-export const Tech: NextPage = () => {
+type Props = {
+  techProjects: TechProjects;
+};
+
+export const Tech: FC<Props> = (props) => {
   return (
     <>
       <PageHead
@@ -15,15 +29,26 @@ export const Tech: NextPage = () => {
         metaDescription="A showcase of Atte's tech related work"
       />
       <Navigation activePage="Tech" />
-      <Section variant="gray" fillViewport={true} firstSection={true}>
-        <main className={styles.main}>
-          <div className="start">
-            <Text t="h1">Tech</Text>
-            <Text t="body1">[coming soon]</Text>
-          </div>
-        </main>
+      <Section variant="gray" firstSection fillViewport>
+        <div className={styles.container}>
+          <section className={styles.cardsSection}>
+            <div className={styles.articles}>
+              <Text t="h4">Tech</Text>
+              <ButtonPrimary
+                label="Carpentry Projects"
+                href="/carpentry"
+                // @ts-ignore
+                link={Link}
+              />
+            </div>
+            <div className={styles.cards}>
+              {props.techProjects.map((techProject) => (
+                <Card key={techProject.slug} project={techProject} />
+              ))}
+            </div>
+          </section>
+        </div>
       </Section>
-
       <Footer />
     </>
   );

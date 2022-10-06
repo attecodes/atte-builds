@@ -43,10 +43,7 @@ export const Carpentry: FC<Props> = (props) => {
             </div>
             <div className={styles.cards}>
               {props.carpentryProjects.map((carpentryProject) => (
-                <Card
-                  key={carpentryProject.slug}
-                  carpentryProject={carpentryProject}
-                />
+                <Card key={carpentryProject.slug} project={carpentryProject} />
               ))}
             </div>
           </section>

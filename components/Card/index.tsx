@@ -3,28 +3,26 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Text } from "components";
-import { CarpentryProjectDetails } from "lib/queries";
+import { ProjectDetails } from "lib/queries";
 
 import styles from "./index.module.css";
 
 interface CardProps {
-  carpentryProject: CarpentryProjectDetails;
+  project: ProjectDetails;
 }
 
 export function Card(props: CardProps) {
-  const date = new Date(props.carpentryProject.publishedAt).toLocaleDateString(
-    "en"
-  );
+  const date = new Date(props.project.publishedAt).toLocaleDateString("en");
 
   return (
     <div>
-      <Link href={`/carpentry/${props.carpentryProject.slug}`}>
+      <Link href={`/carpentry/${props.project.slug}`}>
         <a className={styles.card}>
           <div className={styles.content}>
             <Text t="caption" className={styles.date}>
               Published: {date}
             </Text>
-            <Text t="body1">{props.carpentryProject.title}</Text>
+            <Text t="body1">{props.project.title}</Text>
             <Text
               t="caption"
               className={styles.read_more}
@@ -35,8 +33,8 @@ export function Card(props: CardProps) {
           </div>
           <div className={styles.image}>
             <Image
-              src={props.carpentryProject.imageUrl || "/logo_dark.png"}
-              alt={props.carpentryProject.title}
+              src={props.project.imageUrl || "/logo_dark.png"}
+              alt={props.project.title}
               layout="fill"
               objectFit="cover"
             />
