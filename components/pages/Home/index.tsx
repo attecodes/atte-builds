@@ -44,7 +44,7 @@ export const Home: NextPage = () => {
         <div className={styles.section}>
           <ButtonPrimary
             label="View Projects"
-            href="/carpentry"
+            href="/tech"
             // @ts-ignore
             link={Link}
           />
