@@ -43,7 +43,11 @@ export const Tech: FC<Props> = (props) => {
             </div>
             <div className={styles.cards}>
               {props.techProjects.map((techProject) => (
-                <Card key={techProject.slug} project={techProject} />
+                <Card
+                  key={techProject.slug}
+                  project={techProject}
+                  type="tech"
+                />
               ))}
             </div>
           </section>

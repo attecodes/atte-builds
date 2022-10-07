@@ -9,6 +9,7 @@ import styles from "./index.module.css";
 
 interface CardProps {
   project: ProjectDetails;
+  type: "carpentry" | "tech";
 }
 
 export function Card(props: CardProps) {
@@ -16,7 +17,7 @@ export function Card(props: CardProps) {
 
   return (
     <div>
-      <Link href={`/carpentry/${props.project.slug}`}>
+      <Link href={`/${props.type}/${props.project.slug}`}>
         <a className={styles.card}>
           <div className={styles.content}>
             <Text t="caption" className={styles.date}>

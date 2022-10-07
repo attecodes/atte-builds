@@ -2,7 +2,7 @@ import { GetStaticProps } from "next";
 
 import { fetchCMSContent } from "lib/fetchCMSContent";
 
-import { ProjectPage } from "components/pages/Carpentry/Project";
+import { ProjectPage } from "components/pages/Tech/Project";
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   try {
