@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import Link from "next/link";
+// import Link from "next/link";
 
 import {
   Section,
@@ -9,7 +9,7 @@ import {
   Navigation,
   Footer,
   Card,
-  ButtonPrimary,
+  // ButtonPrimary,
 } from "components";
 
 import { TechProjects } from "lib/queries";
@@ -34,12 +34,12 @@ export const Tech: FC<Props> = (props) => {
           <section className={styles.cardsSection}>
             <div className={styles.articles}>
               <Text t="h4">Tech</Text>
-              <ButtonPrimary
+              {/* <ButtonPrimary
                 label="Carpentry Projects"
                 href="/carpentry"
                 // @ts-ignore
                 link={Link}
-              />
+              /> */}
             </div>
             <div className={styles.cards}>
               {props.techProjects.map((techProject) => (

@@ -24,10 +24,18 @@ export const Home: NextPage = () => {
         metaDescription="Home page for Atte Builds"
       />
       <Navigation activePage="Home" />
-      <Section variant="gray">
+      <Section variant="gray" fillViewport>
         <main className={styles.main}>
           <div className="start">
-            <Text t="h1">👋 Welcome to Atte builds</Text>
+            <Text t="h1" align="center">
+              Welcome to Atte Builds
+            </Text>
+            <ButtonPrimary
+              label="View Projects"
+              href="/tech"
+              // @ts-ignore
+              link={Link}
+            />
           </div>
           <div className="end">
             <Image
@@ -40,16 +48,7 @@ export const Home: NextPage = () => {
           </div>
         </main>
       </Section>
-      <Section>
-        <div className={styles.section}>
-          <ButtonPrimary
-            label="View Projects"
-            href="/tech"
-            // @ts-ignore
-            link={Link}
-          />
-        </div>
-      </Section>
+
       <Footer />
     </>
   );

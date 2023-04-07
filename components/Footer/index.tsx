@@ -13,11 +13,11 @@ export const Footer: FC = () => (
         <Link href="/">
           <a>Home</a>
         </Link>
-        <Link href="/carpentry">
+        {/* <Link href="/carpentry">
           <a>Carpentry</a>
-        </Link>
+        </Link> */}
         <Link href="/tech">
-          <a>Tech</a>
+          <a>Projects</a>
         </Link>
       </nav>
       <nav className={styles.footer_icons}>

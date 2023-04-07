@@ -15,9 +15,11 @@ export const main = css`
   }
   .start {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-area: start;
+    gap: 6rem;
   }
   .image {
     border-radius: 1rem;

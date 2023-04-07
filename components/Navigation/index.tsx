@@ -17,7 +17,7 @@ export const Navigation: FC<Props> = (props) => {
     <>
       <HeaderMobile>
         <NavItemMobile url="/" name={"Home"} />
-        <NavItemMobile url="/carpentry" name={"Carpentry"} />
+        {/* <NavItemMobile url="/carpentry" name={"Carpentry"} /> */}
         <NavItemMobile url="/tech" name={"Tech"} />
       </HeaderMobile>
 
@@ -27,14 +27,14 @@ export const Navigation: FC<Props> = (props) => {
           name={"Home"}
           active={props.activePage === "Home"}
         />
-        <NavItemDesktop
+        {/* <NavItemDesktop
           url={"/carpentry"}
           name={"Carpentry"}
           active={props.activePage === "Carpentry"}
-        />
+        /> */}
         <NavItemDesktop
           url={"/tech"}
-          name={"Tech"}
+          name={"Projects"}
           active={props.activePage === "Tech"}
         />
       </HeaderDesktop>
