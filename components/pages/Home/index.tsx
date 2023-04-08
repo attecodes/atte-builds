@@ -37,15 +37,6 @@ export const Home: NextPage = () => {
               link={Link}
             />
           </div>
-          <div className="end">
-            <Image
-              className="image"
-              src="/atte.jpg"
-              alt="Atte the man himself"
-              width={320}
-              height={425}
-            />
-          </div>
         </main>
       </Section>
 
