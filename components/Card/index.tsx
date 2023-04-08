@@ -9,7 +9,7 @@ import styles from "./index.module.css";
 
 interface CardProps {
   project: ProjectDetails;
-  type: "carpentry" | "tech";
+  type: "tech";
 }
 
 export function Card(props: CardProps) {

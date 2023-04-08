@@ -34,12 +34,6 @@ export const Tech: FC<Props> = (props) => {
           <section className={styles.cardsSection}>
             <div className={styles.articles}>
               <Text t="h4">Tech</Text>
-              {/* <ButtonPrimary
-                label="Carpentry Projects"
-                href="/carpentry"
-                // @ts-ignore
-                link={Link}
-              /> */}
             </div>
             <div className={styles.cards}>
               {props.techProjects.map((techProject) => (

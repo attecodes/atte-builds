@@ -6,7 +6,7 @@ import { HeaderMobile } from "components/Header/HeaderMobile";
 import { NavItemDesktop } from "./NavItemDesktop";
 import { NavItemMobile } from "./NavItemMobile";
 
-type PageName = "Home" | "Carpentry" | "Tech";
+type PageName = "Home" | "Tech";
 
 export type Props = {
   activePage: PageName;
@@ -17,7 +17,6 @@ export const Navigation: FC<Props> = (props) => {
     <>
       <HeaderMobile>
         <NavItemMobile url="/" name={"Home"} />
-        {/* <NavItemMobile url="/carpentry" name={"Carpentry"} /> */}
         <NavItemMobile url="/tech" name={"Tech"} />
       </HeaderMobile>
 
@@ -27,11 +26,7 @@ export const Navigation: FC<Props> = (props) => {
           name={"Home"}
           active={props.activePage === "Home"}
         />
-        {/* <NavItemDesktop
-          url={"/carpentry"}
-          name={"Carpentry"}
-          active={props.activePage === "Carpentry"}
-        /> */}
+
         <NavItemDesktop
           url={"/tech"}
           name={"Projects"}
