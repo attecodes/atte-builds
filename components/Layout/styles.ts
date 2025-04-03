@@ -36,9 +36,10 @@ export const section = css`
     padding: 12.2rem 0rem;
   }
   &.firstSection {
-    padding-top: 15.2rem;
-    ${breakpoints.small} {
-      padding-top: 12.2rem;
+    margin-top: 0;
+    padding-top: 12.6rem;
+    ${breakpoints.large} {
+      padding-top: 2rem;
     }
   }
 `;
