@@ -5,6 +5,7 @@ import { NextPage } from "next";
 import { Section, Text, PageHead, Navigation, Footer } from "components";
 
 import * as styles from "./styles";
+import Image from "next/image";
 
 export const About: NextPage = () => {
   return (
@@ -41,6 +42,16 @@ export const About: NextPage = () => {
             communication so you always know what’s happening with your
             investment.
           </Text>
+          <div className="imageContainer">
+            <Image
+              src="/saw.jpeg"
+              alt="About Smart Craft Solutions"
+              width={400}
+              height={400}
+              className="image"
+              objectFit="cover"
+            />
+          </div>
           <Text t="body2">
             What sets me apart is my dedication to organization, safety, and
             efficiency. I’ve worked on job sites where poor planning led to
