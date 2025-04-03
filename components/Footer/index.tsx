@@ -13,19 +13,19 @@ export const Footer: FC = () => (
       <div className="top">
         <div className={styles.footer_content}>
           <nav className={styles.footer_nav}>
-            <Link href="/">
+            <Link legacyBehavior href="/">
               <a>Home</a>
             </Link>
-            <Link href="/gallery">
+            <Link legacyBehavior href="/gallery">
               <a>Gallery</a>
             </Link>
-            <Link href="/shop">
+            <Link legacyBehavior href="/shop">
               <a>Shop</a>
             </Link>
-            <Link href="/about">
+            <Link legacyBehavior href="/about">
               <a>About</a>
             </Link>
-            <Link href="/contact">
+            <Link legacyBehavior href="/contact">
               <a>Contact Us</a>
             </Link>
           </nav>

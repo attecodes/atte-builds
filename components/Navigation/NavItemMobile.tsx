@@ -13,7 +13,7 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 export const NavItemMobile: FC<Props> = (props) => {
   return (
     <div className={styles.navMain_MobileItem}>
-      <Link href={props.url}>
+      <Link legacyBehavior href={props.url}>
         <a {...props} className={styles.navMain_MobileLink}>
           <div className={styles.navMain_MobileItemInner}>{props.name}</div>
         </a>

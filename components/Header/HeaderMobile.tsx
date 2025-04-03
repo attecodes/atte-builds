@@ -35,6 +35,7 @@ export const HeaderMobile: FC<Props> = (props) => {
         </div>
         <div className="end-buttons">
           {props.buttons && (
+            /* @ts-ignore */
             <div className={styles.navMain_Buttons}>{props.buttons}</div>
           )}
           <ToggleNavButton

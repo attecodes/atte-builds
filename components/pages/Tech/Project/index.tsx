@@ -67,7 +67,7 @@ export const ProjectPage = (props: TechProjectProps) => {
 
         <section className={styles.blogContainer}>
           <div className={styles.content}>
-            <Link href="/tech" passHref={true}>
+            <Link legacyBehavior href="/tech" passHref={true}>
               <a className={styles.backNavLink}>Back to projects</a>
             </Link>
 

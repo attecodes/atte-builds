@@ -19,7 +19,7 @@ interface BlockContentRendererProps {
 
 const BlockRenderer = (params: {
   node: { style: "h1" | "h2" | "h3" | "h4" | "normal" | "blockquote" };
-  children: JSX.Element;
+  children: React.ReactNode;
 }) => {
   const { style } = params.node;
   if (style === "h1") {
@@ -60,17 +60,20 @@ const serializers: BlockContentProps["serializers"] = {
     if (type === "bullet") {
       return (
         <ul className={level === 2 ? styles.nestedUl : styles.ul}>
+          {/* @ts-ignore */}
           {params.children}
         </ul>
       );
     }
     return (
       <ol className={level === 2 ? styles.nestedOl : styles.ol}>
+        {/* @ts-ignore */}
         {params.children}
       </ol>
     );
   },
   listItem: (params) => {
+    /* @ts-ignore */
     return <li className={styles.li}>{params.children}</li>;
   },
   marks: {
@@ -122,7 +125,10 @@ const serializers: BlockContentProps["serializers"] = {
 };
 
 export const BlockContentRenderer: FC<BlockContentRendererProps> = (props) => {
-  return <BlockContent blocks={props.blocks} serializers={serializers} />;
+  return (
+    /* @ts-ignore */
+    <BlockContent {...(props as BlockContentProps)} serializers={serializers} />
+  );
 };
 
 export default BlockContentRenderer;

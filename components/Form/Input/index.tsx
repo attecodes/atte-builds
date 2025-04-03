@@ -23,6 +23,7 @@ const Input: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
             {errors}
           </Text>
         )}
+        {/* @ts-ignore */}
         <textarea className="form_field" {...otherProps} name={name} />
         <label className="form_label" htmlFor={name}>
           {label}
@@ -44,5 +45,5 @@ const Input: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
     </div>
   );
 };
-
+/* @ts-ignore */
 export const FormInput = React.forwardRef(Input);

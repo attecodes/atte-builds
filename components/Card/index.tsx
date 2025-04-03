@@ -17,7 +17,7 @@ export function Card(props: CardProps) {
 
   return (
     <div>
-      <Link href={`/${props.type}/${props.project.slug}`}>
+      <Link legacyBehavior href={`/${props.type}/${props.project.slug}`}>
         <a className={styles.card}>
           <div className={styles.content}>
             <Text t="caption" className={styles.date}>

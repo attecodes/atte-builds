@@ -25,8 +25,10 @@ export const HeaderDesktop: FC<Props> = (props) => {
             </a>
           </Link>
         </div> */}
+        {/* @ts-ignore */}
         <div className={styles.navMain_Desktop}>{props.children}</div>
         {props.buttons && (
+          /* @ts-ignore */
           <div className={styles.navMain_Buttons}>{props.buttons}</div>
         )}
       </nav>

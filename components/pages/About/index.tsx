@@ -49,7 +49,6 @@ export const About: NextPage = () => {
               width={400}
               height={400}
               className="image"
-              objectFit="cover"
             />
           </div>
           <Text t="body2">

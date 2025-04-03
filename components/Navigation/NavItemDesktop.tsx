@@ -12,7 +12,7 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export const NavItemDesktop: FC<Props> = ({ active, name, url, ...props }) => {
   return (
-    <Link href={url}>
+    <Link legacyBehavior href={url}>
       <a
         {...props}
         className={styles.navMain_DesktopLink}
