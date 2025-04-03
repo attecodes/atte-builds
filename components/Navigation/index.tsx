@@ -29,7 +29,22 @@ export const Navigation: FC<Props> = (props) => {
 
         <NavItemDesktop
           url={"/tech"}
-          name={"Projects"}
+          name={"gallery"}
+          active={props.activePage === "Tech"}
+        />
+        <NavItemDesktop
+          url={"/tech"}
+          name={"Shop"}
+          active={props.activePage === "Tech"}
+        />
+        <NavItemDesktop
+          url={"/tech"}
+          name={"about"}
+          active={props.activePage === "Tech"}
+        />
+        <NavItemDesktop
+          url={"/tech"}
+          name={"contact us"}
           active={props.activePage === "Tech"}
         />
       </HeaderDesktop>

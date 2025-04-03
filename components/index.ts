@@ -9,3 +9,4 @@ export { Text } from "./Text";
 export { ToggleNavButton } from "./Nav/ToggleNavButton";
 export { Navigation } from "./Navigation";
 export { NavMobile } from "./Nav/NavMobile";
+export { GoogleReviews } from "./GoogleReviews";

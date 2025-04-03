@@ -1,4 +1,15 @@
 export const queries = {
+  /** fetch googleReviews */
+  googleReviews: /* groq */ `
+    *[_type == "googleReview"] | order(datePublished desc) {
+      clientName,
+      clientOccupation,
+      "clientImageUrl": clientImage.asset->url,
+      datePublished,
+      review,
+      stars
+    }
+  `,
   /** fetch all tech projects, sorted by publishedAt */
   techProjects: /* groq */ `
     *[_type == "techProject"] | order(publishedAt desc) {
@@ -54,7 +65,16 @@ export type Project = {
   publishedAt: string;
 };
 
+export type GoogleReview = {
+  clientName: string;
+  clientOccupation: string;
+  clientImageUrl?: string;
+  datePublished: string;
+  review: string;
+  stars: number;
+};
 export interface QueryContent {
+  googleReviews: GoogleReview[];
   techProjects: TechProjects;
   techProject: Project;
 }
