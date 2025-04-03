@@ -2,7 +2,6 @@ import React from "react";
 
 import { NextPage } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 import {
   Section,
@@ -25,8 +24,8 @@ export const Home: NextPage = () => {
         metaDescription="Home page for Smart Craft Solutions"
       />
       <Navigation activePage="Home" />
-      <main className={styles.main}>
-        <Section variant="gray" className={styles.section} firstSection>
+      <Section variant="gray" firstSection>
+        <div className={styles.section}>
           <Text t="h1" align="center">
             Welcome to Smart Craft Solutions (San Diego)
           </Text>
@@ -38,8 +37,10 @@ export const Home: NextPage = () => {
             siding, demolition, cabinets, and custom furniture, I bring expert
             craftsmanship to every job.
           </Text>
-        </Section>
-        <Section className={styles.section}>
+        </div>
+      </Section>
+      <Section>
+        <div className={styles.section}>
           <Text t="h3" align="start">
             What sets Smart Craft Solutions apart?
           </Text>
@@ -62,35 +63,89 @@ export const Home: NextPage = () => {
             happen.
           </Text>
           <Text t="h3">Let’s build something amazing together!</Text>
-        </Section>
-        <Section variant="gray">
-          <div className={styles.section}>
-            <Text t="h2" align="center">
-              Customer Reviews
-            </Text>
-            <GoogleReviews />
-            <ButtonPrimary
-              target="_blank"
-              label="Check Out All Our Google Reviews"
-              href="https://www.google.com"
-            />
+        </div>
+      </Section>
+      <Section variant="gray">
+        <div className={styles.section}>
+          <Text t="h2" align="center">
+            Customer Reviews
+          </Text>
+          <GoogleReviews />
+        </div>
+      </Section>
+      <Section>
+        <div className={styles.section}>
+          <Text t="h2" align="center">
+            Brands that we enjoy
+          </Text>
+          <div className="logo-container">
+            <div className="logo-wrapper">
+              <Image
+                src="/brands/Makita.png"
+                alt="Makita logo"
+                width={200}
+                height={100}
+              />
+            </div>
+            <div className="logo-wrapper">
+              <Image
+                src="/brands/sawstop.webp"
+                alt="SawStop logo"
+                width={200}
+                height={100}
+              />
+            </div>
+            <div className="logo-wrapper">
+              <Image
+                src="/brands/milwaukee.png"
+                alt="Milwaukee logo"
+                width={300}
+                height={200}
+              />
+            </div>
+            <div className="logo-wrapper">
+              <Image
+                src={"/brands/Festool.png"}
+                width={400}
+                height={100}
+                alt="festool logo"
+              />
+            </div>
+            <div className="logo-wrapper">
+              <Image
+                src={"/brands/sketchup.png"}
+                width={200}
+                height={100}
+                alt="sketchup logo"
+              />
+            </div>
+            <div className="logo-wrapper">
+              <Image
+                src={"/brands/dewalt.png"}
+                width={300}
+                height={100}
+                alt="dewalt logo"
+              />
+            </div>
+            <div className="logo-wrapper">
+              <Image
+                src={"/brands/fastcap.jpg"}
+                width={200}
+                height={100}
+                alt="fastcap logo"
+              />
+            </div>
+            <div className="logo-wrapper">
+              <Image
+                src={"/brands/timbertech.png"}
+                width={300}
+                height={100}
+                alt="timbertech logo"
+              />
+            </div>
           </div>
-        </Section>
-        <Section>
-          <div className={styles.section}>
-            <Text t="h2" align="center">
-              Brands that I like
-            </Text>
-            <Text>Makita</Text>
-            <Text>SawStop</Text>
-            <Text>Milwaukee</Text>
-            <Text>Festool</Text>
-            <Text>SketchUp</Text>
-            <Text>Dewalt</Text>
-            <Text>Fastcap</Text>
-          </div>
-        </Section>
-      </main>
+        </div>
+      </Section>
       <Footer />
     </>
   );

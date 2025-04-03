@@ -7,11 +7,33 @@ export const footer = css`
   padding: 2rem 2.4rem;
   position: relative;
   grid-column: full;
-
   ${breakpoints.large} {
     padding: 4.8rem 0;
     display: grid;
     grid-template-columns: inherit;
+  }
+  .footer-container {
+    grid-column: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .top {
+    width: 100%;
+  }
+  .middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  .bottom {
+    border-top: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 `;
 

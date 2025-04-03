@@ -23,11 +23,10 @@ export const section = css`
   grid-column: full;
   display: grid;
   grid-template-columns: inherit;
-  background-color: var(--surface-01);
   padding: 8.2rem 0rem;
 
   &.gray {
-    background-color: var(--surface-02);
+    background: var(--surface-02);
   }
   &.fillViewport {
     min-height: 100vh;
