@@ -8,8 +8,8 @@ import { ToggleNavButton, NavMobile } from "components";
 import * as styles from "./styles";
 
 interface Props {
-  buttons?: JSX.Element[];
-  children?: JSX.Element | JSX.Element[];
+  buttons?: any;
+  children?: any;
 }
 
 export const HeaderMobile: FC<Props> = (props) => {
