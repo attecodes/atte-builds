@@ -1,4 +1,15 @@
 export const queries = {
+  /** fetch all galleries, sorted by publishedAt */
+  galleries: /* groq */ `
+    *[_type == "gallery"] | order(publishedAt desc) {
+      title,
+      publishedAt,
+      images[]{
+        alt,
+        "imageUrl": asset->url
+      }
+    }
+  `,
   /** fetch googleReviews */
   googleReviews: /* groq */ `
     *[_type == "googleReview"] | order(datePublished desc) {
@@ -56,6 +67,7 @@ export type ProjectDetails = {
 };
 
 export type TechProjects = ProjectDetails[];
+export type Galleries = Gallery[];
 
 export type Project = {
   slug: string;
@@ -73,7 +85,17 @@ export type GoogleReview = {
   review: string;
   stars: number;
 };
+
+export type Gallery = {
+  title: string;
+  images: {
+    alt: string;
+    imageUrl: string;
+  }[];
+  publishedAt: string;
+};
 export interface QueryContent {
+  galleries: Galleries;
   googleReviews: GoogleReview[];
   techProjects: TechProjects;
   techProject: Project;

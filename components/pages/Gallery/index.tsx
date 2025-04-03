@@ -1,34 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { FC, useState, useEffect } from "react";
 
-import { NextPage } from "next";
 import Image from "next/image";
 
 import LightGallery from "lightgallery/react";
 // import styles
 import "lightgallery/css/lightgallery.css";
-import "lightgallery/css/lg-zoom.css";
-import "lightgallery/css/lg-thumbnail.css";
-// import plugins if you need
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import lgZoom from "lightgallery/plugins/zoom";
-import { Section, Text, PageHead, Navigation, Footer } from "components";
 
+import { Section, Text, PageHead, Navigation, Footer } from "components";
+import { Galleries } from "lib/queries";
 import * as styles from "./styles";
 
-export const Gallery: NextPage = () => {
+type Props = {
+  galleries: Galleries;
+};
+
+export const Gallery: FC<Props> = (props: Props) => {
   const [images, setImages] = useState<
     { src: string; width: number; height: number }[]
   >([]);
 
-  useEffect(() => {
-    fetch("/api/images")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setImages(data.images);
-      });
-  }, []);
-  console.log(images);
   return (
     <>
       <PageHead
@@ -40,28 +30,31 @@ export const Gallery: NextPage = () => {
 
       <Section variant="gray" fillViewport firstSection>
         <div className={styles.section}>
-          <Text t="h1" align="center">
+          <Text t="h2" align="center">
             Gallery
           </Text>
-          <Text t="body2">Pergola</Text>
-          <div className="wide">
-            <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-              <div className="gallery-grid">
-                {Array.isArray(images) &&
-                  images.map((src, index) => (
-                    <a href={src.src} key={index}>
+          {props.galleries.map((gallery, key) => (
+            <div className="container" key={key}>
+              <Text t="h4">{gallery.title}</Text>
+              <div className="wide">
+                {/* <div className="gallery-grid"> */}
+                <LightGallery plugins={[]} download={false}>
+                  {gallery.images.map((image, index) => (
+                    <a href={image.imageUrl} key={index}>
                       <Image
-                        src={src.src}
+                        src={image.imageUrl}
                         alt={`Image ${index}`}
-                        width={src.width}
-                        height={src.height}
+                        width={350}
+                        height={350}
                         className="gallery-image"
                       />
                     </a>
                   ))}
+                </LightGallery>
               </div>
-            </LightGallery>
-          </div>
+              {/* </div> */}
+            </div>
+          ))}
         </div>
       </Section>
 

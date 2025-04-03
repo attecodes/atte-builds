@@ -23,7 +23,7 @@ export const Shop: NextPage = () => {
           <Text t="body2">
             At Smart Craft Solutions, we have the tools, expertise, and
             craftsmanship to create high-quality cabinets and custom furniture.
-            Using SketchUp 3D, we bring ideas to life with detailed
+            Using SketchUp 3D, we can bring ideas to life with detailed
             visualizations before turning them into reality. This also allows us
             to explore multiple design options before making a final decision.
             From precise assembly to seamless installation, we take pride in
