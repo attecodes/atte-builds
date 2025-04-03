@@ -13,6 +13,7 @@
     "@emotion/server": "^11.4.0",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^3.3.2",
+    "@sendgrid/mail": "^8.1.4",
     "axios": "^1.8.4",
     "classnames": "^2.5.1",
     "lightgallery": "^2.8.3",
