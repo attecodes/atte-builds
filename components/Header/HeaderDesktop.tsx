@@ -5,8 +5,8 @@ import React, { FC } from "react";
 import * as styles from "./styles";
 
 interface Props {
-  buttons?: JSX.Element[];
-  children?: JSX.Element | JSX.Element[];
+  buttons?: any;
+  children?: any;
 }
 
 export const HeaderDesktop: FC<Props> = (props) => {
