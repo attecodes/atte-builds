@@ -101,14 +101,6 @@ export const Home: NextPage = () => {
           <div className="logo-container">
             <div className="logo-wrapper">
               <Image
-                src="/brands/Makita.png"
-                alt="Makita logo"
-                width={300}
-                height={150}
-              />
-            </div>
-            <div className="logo-wrapper">
-              <Image
                 src="/brands/sawstop.webp"
                 alt="SawStop logo"
                 width={300}
