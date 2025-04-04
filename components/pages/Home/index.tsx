@@ -19,18 +19,24 @@ export const Home: NextPage = () => {
   return (
     <>
       <PageHead
-        title="Smart Craft Solutions"
-        mediaTitle="Smart Craft Solutions"
-        metaDescription="Home page for Smart Craft Solutions"
+        title="Smart Craft Woodworks"
+        mediaTitle="Smart Craft Woodworks"
+        metaDescription="Home page for Smart Craft Woodworks"
       />
       <Navigation activePage="Home" />
       <Section variant="gray" firstSection>
         <div className={styles.section}>
+          {/* <Image
+            src={"/logo2.png"}
+            width={300}
+            height={300}
+            alt="smartcraft logo"
+          /> */}
           <Text t="h1" align="center">
-            Welcome to Smart Craft Solutions (San Diego)
+            Welcome to Smart Craft Woodworks (San Diego)
           </Text>
           <Text t="body2">
-            At Smart Craft Solutions, wood isn’t just a material—it’s a passion.
+            At Smart Craft Woodworks, wood isn’t just a material—it’s a passion.
             As a dedicated craftsman, I specialize in designing, cutting,
             painting, staining, repairing, and building anything with wood. From
             small repairs to full-scale projects like decks, doors, flooring,
@@ -45,7 +51,7 @@ export const Home: NextPage = () => {
             Services
           </Text>
           <div className="services">
-            <Text>Drywall Repeair</Text>
+            <Text>Drywall Repair</Text>
             <Text>Wood Restoration</Text>
             <Text>Painting</Text>
             <Text>Flooring</Text>
@@ -61,7 +67,7 @@ export const Home: NextPage = () => {
             <Text>Pergola</Text>
           </div>
           <Text t="h3" align="start">
-            What sets Smart Craft Solutions apart?
+            What sets Smart Craft Woodworks apart?
           </Text>
 
           <Text>

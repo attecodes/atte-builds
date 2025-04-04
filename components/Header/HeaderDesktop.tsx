@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 
-// import Image from "next/image";
+import Link from "next/link";
+import Image from "next/image";
 
 import * as styles from "./styles";
 
@@ -13,18 +14,16 @@ export const HeaderDesktop: FC<Props> = (props) => {
   return (
     <header className={styles.headerDesktop}>
       <nav className={styles.menuDesktop}>
-        {/* <div className="logo">
+        <div className="logo">
           <Link href={"/"}>
-            <a>
-              <Image
-                src={isDarkTheme ? "/logo_dark.png" : "/logo_light.png"}
-                alt="Dating University Logo"
-                width={96}
-                height={96}
-              />
-            </a>
+            <Image
+              src={"/logo2.png"}
+              alt="SmartCraftSolutions Logo"
+              width={96}
+              height={96}
+            />
           </Link>
-        </div> */}
+        </div>
         {/* @ts-ignore */}
         <div className={styles.navMain_Desktop}>{props.children}</div>
         {props.buttons && (

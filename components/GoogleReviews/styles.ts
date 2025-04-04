@@ -35,7 +35,7 @@ export const googleReviews = css`
     background-color: var(--color-8);
   }
   .customArrow {
-    background: limegreen;
+    background: #2fae52;
     padding: 1.5rem;
     font-size: 2rem;
     border-radius: 50%;

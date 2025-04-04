@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 
-// import Image from "next/image";
-// import Link from "next/link";
+import Image from "next/image";
+import Link from "next/link";
 
 import { ToggleNavButton, NavMobile } from "components";
 
@@ -22,16 +22,14 @@ export const HeaderMobile: FC<Props> = (props) => {
     >
       <header className={styles.headerMobile}>
         <div className="logo">
-          {/* <Link href={"/"}>
-            <a>
-              <Image
-                src={isDarkTheme ? "/logo_dark.png" : "/logo_light.png"}
-                alt="Dating University Logo"
-                width={86}
-                height={86}
-              />
-            </a>
-          </Link> */}
+          <Link href={"/"}>
+            <Image
+              src={"/logo2.png"}
+              alt="SmartCraftBuilders Logo"
+              width={86}
+              height={86}
+            />
+          </Link>
         </div>
         <div className="end-buttons">
           {props.buttons && (

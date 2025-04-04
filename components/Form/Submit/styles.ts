@@ -17,7 +17,7 @@ export const submit = css`
   cursor: pointer;
   border-radius: 0.4rem;
   transition: opacity 0.3s ease 0s;
-  background-color: limegreen;
+  background-color: #2fae52;
   border: none;
 
   &:hover:not(:disabled),

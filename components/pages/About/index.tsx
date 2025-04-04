@@ -11,9 +11,9 @@ export const About: NextPage = () => {
   return (
     <>
       <PageHead
-        title="Smart Craft Solutions"
-        mediaTitle="Smart Craft Solutions"
-        metaDescription="About Smart Craft Solutions"
+        title="Smart Craft Woodworks"
+        mediaTitle="Smart Craft Woodworks"
+        metaDescription="About Smart Craft Woodworks"
       />
       <Navigation activePage="About" />
       <Section variant="gray" fillViewport firstSection>
@@ -33,7 +33,7 @@ export const About: NextPage = () => {
             care.
           </Text>
           <Text t="body2">
-            I founded Smart Craft Solutions to bridge the gap between
+            I founded Smart Craft Woodworks to bridge the gap between
             contractors, workers, and clients. Too often, I’ve seen contractors
             promise top-tier work only to outsource labor to inexperienced
             workers. When you hire me, you’re getting direct, skilled
@@ -45,7 +45,7 @@ export const About: NextPage = () => {
           <div className="imageContainer">
             <Image
               src="/saw.jpeg"
-              alt="About Smart Craft Solutions"
+              alt="About Smart Craft Woodworks"
               width={400}
               height={400}
               className="image"
@@ -60,7 +60,7 @@ export const About: NextPage = () => {
             cut corners, rush jobs for a paycheck, or compromise on quality.
           </Text>
           <Text t="body2">
-            When you choose Smart Craft Solutions, you’re choosing a carpenter
+            When you choose Smart Craft Woodworks, you’re choosing a carpenter
             who values craftsmanship, integrity, and a seamless client
             experience. Let’s build something great together.
           </Text>

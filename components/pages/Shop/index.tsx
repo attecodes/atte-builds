@@ -10,9 +10,9 @@ export const Shop: NextPage = () => {
   return (
     <>
       <PageHead
-        title="Smart Craft Solutions"
-        mediaTitle="Smart Craft Solutions"
-        metaDescription="Shop for Smart Craft Solutions"
+        title="Smart Craft Woodworks"
+        mediaTitle="Smart Craft Woodworks"
+        metaDescription="Shop for Smart Craft Woodworks"
       />
       <Navigation activePage="Shop" />
       <Section fillViewport variant="gray" firstSection>
@@ -21,7 +21,7 @@ export const Shop: NextPage = () => {
             Shop
           </Text>
           <Text t="body2">
-            At Smart Craft Solutions, we have the tools, expertise, and
+            At Smart Craft Woodworks, we have the tools, expertise, and
             craftsmanship to create high-quality cabinets and custom furniture.
             Using SketchUp 3D, we can bring ideas to life with detailed
             visualizations before turning them into reality. This also allows us

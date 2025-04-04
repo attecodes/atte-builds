@@ -22,9 +22,9 @@ export const Gallery: FC<Props> = (props: Props) => {
   return (
     <>
       <PageHead
-        title="Smart Craft Solutions"
-        mediaTitle="Smart Craft Solutions"
-        metaDescription="Gallery for Smart Craft Solutions"
+        title="Smart Craft Woodworks"
+        mediaTitle="Smart Craft Woodworks"
+        metaDescription="Gallery for Smart Craft Woodworks"
       />
       <Navigation activePage="Gallery" />
 

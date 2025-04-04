@@ -54,7 +54,7 @@ export const Footer: FC = () => (
       </div>
       <div className="bottom">
         <Text t="caption">
-          © 2025 All Rights Reserved | Smart Craft Solutions
+          © 2025 All Rights Reserved | Smart Craft Woodworks
         </Text>
       </div>
     </div>
