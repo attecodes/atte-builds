@@ -28,7 +28,7 @@ export const section = css`
     display: grid;
     grid-template-columns: repeat(
       auto-fill,
-      minmax(250px, 1fr)
+      minmax(200px, 1fr)
     ); /* Adjust min width */
     gap: 0.4rem; /* Spacing between images */
     width: 100%;
@@ -37,6 +37,10 @@ export const section = css`
   .gallery-item {
     width: 100%; /* Make sure images fill their container */
     height: auto;
+    object-fit: cover;
+    margin: 0.2rem;
+  }
+  .img-responsive {
     object-fit: cover;
   }
 `;

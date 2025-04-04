@@ -40,13 +40,17 @@ export const Gallery: FC<Props> = (props: Props) => {
                 {/* <div className="gallery-grid"> */}
                 <LightGallery plugins={[]} download={false}>
                   {gallery.images.map((image, index) => (
-                    <a href={image.imageUrl} key={index}>
+                    <a
+                      href={image.imageUrl}
+                      key={index}
+                      className="gallery-item"
+                    >
                       <Image
                         src={image.imageUrl}
                         alt={`Image ${index}`}
                         width={350}
                         height={350}
-                        className="gallery-image"
+                        className="img-responsive"
                       />
                     </a>
                   ))}
