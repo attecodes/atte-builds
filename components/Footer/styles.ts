@@ -24,9 +24,17 @@ export const footer = css`
   }
   .middle {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: center;
     justify-content: center;
-    gap: 2rem;
+    ${breakpoints.medium} {
+      flex-direction: row;
+      gap: 2rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
     width: 100%;
   }
   .bottom {

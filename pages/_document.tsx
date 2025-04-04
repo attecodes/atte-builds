@@ -8,6 +8,7 @@ import Document, {
   DocumentContext,
   DocumentInitialProps,
 } from "next/document";
+import { Analytics } from "@vercel/analytics/next";
 
 import createEmotionServer from "@emotion/server/create-instance";
 import { cache } from "@emotion/css";
@@ -40,6 +41,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <Analytics />
         </body>
       </Html>
     );

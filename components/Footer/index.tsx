@@ -49,8 +49,8 @@ export const Footer: FC = () => (
       </div>
 
       <div className="middle">
-        <Text t="body3">Phone: 619.246.0025</Text>
         <Text t="body3">Serving San Diego County</Text>
+        <Text t="body3">Phone: 619.246.0025</Text>
       </div>
       <div className="bottom">
         <Text t="caption">
