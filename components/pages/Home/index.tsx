@@ -41,9 +41,29 @@ export const Home: NextPage = () => {
       </Section>
       <Section>
         <div className={styles.section}>
+          <Text t="h3" align="center">
+            Services
+          </Text>
+          <div className="services">
+            <Text>Drywall Repeair</Text>
+            <Text>Wood Restoration</Text>
+            <Text>Painting</Text>
+            <Text>Flooring</Text>
+            <Text>Framing</Text>
+            <Text>Decks</Text>
+            <Text>Stairs</Text>
+            <Text>Roof repair</Text>
+            <Text>Junk removal</Text>
+            <Text>Trim</Text>
+            <Text>Cabinets</Text>
+            <Text>Custom Furniture</Text>
+            <Text>Siding</Text>
+            <Text>Pergola</Text>
+          </div>
           <Text t="h3" align="start">
             What sets Smart Craft Solutions apart?
           </Text>
+
           <Text>
             ☑️ Precision & Craftsmanship – Every project is done with care,
             ensuring durability and beauty.
@@ -83,16 +103,17 @@ export const Home: NextPage = () => {
               <Image
                 src="/brands/Makita.png"
                 alt="Makita logo"
-                width={200}
-                height={100}
+                width={300}
+                height={150}
               />
             </div>
             <div className="logo-wrapper">
               <Image
                 src="/brands/sawstop.webp"
                 alt="SawStop logo"
-                width={200}
-                height={100}
+                width={300}
+                height={150}
+                objectFit="contain"
               />
             </div>
             <div className="logo-wrapper">
@@ -100,47 +121,50 @@ export const Home: NextPage = () => {
                 src="/brands/milwaukee.png"
                 alt="Milwaukee logo"
                 width={300}
-                height={200}
-              />
-            </div>
-            <div className="logo-wrapper">
-              <Image
-                src={"/brands/Festool.png"}
-                width={400}
-                height={100}
-                alt="festool logo"
+                height={150}
               />
             </div>
             <div className="logo-wrapper">
               <Image
                 src={"/brands/sketchup.png"}
-                width={200}
-                height={100}
+                width={300}
+                height={150}
                 alt="sketchup logo"
+              />
+            </div>
+
+            <div className="logo-wrapper">
+              <Image
+                src={"/brands/fastcap.jpg"}
+                width={300}
+                height={150}
+                alt="fastcap logo"
               />
             </div>
             <div className="logo-wrapper">
               <Image
                 src={"/brands/dewalt.png"}
                 width={300}
-                height={100}
+                height={150}
                 alt="dewalt logo"
               />
             </div>
             <div className="logo-wrapper">
               <Image
-                src={"/brands/fastcap.jpg"}
-                width={200}
-                height={100}
-                alt="fastcap logo"
+                src={"/brands/Festool.png"}
+                width={300}
+                height={150}
+                alt="festool logo"
+                objectFit="contain"
               />
             </div>
             <div className="logo-wrapper">
               <Image
                 src={"/brands/timbertech.png"}
                 width={300}
-                height={100}
+                height={150}
                 alt="timbertech logo"
+                objectFit="contain"
               />
             </div>
           </div>

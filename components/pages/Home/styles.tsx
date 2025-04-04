@@ -12,10 +12,9 @@ export const section = css`
   grid-column: main;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 
-  .logo-container {
-    margin-top: 2rem;
+  .services {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     justify-items: center;
@@ -23,9 +22,21 @@ export const section = css`
     gap: 20px; /* Adds space between logos */
   }
 
+  .logo-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 20px; /* Adds space between logos */
+  }
+
   .logo-wrapper {
     position: relative;
-    width: 200px; /* Set width of the logos */
-    height: 100px; /* Set height */
+    width: 300px; /* Set width of the logos */
+    height: 150px; /* Set height */
+    justify-content: center;
+    align-self: center;
+    object-fit: contain;
   }
 `;
