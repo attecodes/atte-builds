@@ -47,9 +47,9 @@ export const Contact: NextPage = () => {
   return (
     <>
       <PageHead
-        title="Smart Craft Woodworks"
-        mediaTitle="Smart Craft Woodworks"
-        metaDescription="Contact Smart Craft Woodworks"
+        title="SD Finish"
+        mediaTitle="SD Finish"
+        metaDescription="Contact SD Finish"
       />
       <Navigation activePage="Contact Us" />
       <Section variant="gray" firstSection>

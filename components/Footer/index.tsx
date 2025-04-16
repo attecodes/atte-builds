@@ -53,9 +53,7 @@ export const Footer: FC = () => (
         <Text t="body3">Phone: 619.246.0025</Text>
       </div>
       <div className="bottom">
-        <Text t="caption">
-          © 2025 All Rights Reserved | Smart Craft Woodworks
-        </Text>
+        <Text t="caption">© 2025 All Rights Reserved | SD Finish</Text>
       </div>
     </div>
   </footer>

@@ -11,9 +11,9 @@ export const About: NextPage = () => {
   return (
     <>
       <PageHead
-        title="Smart Craft Woodworks"
-        mediaTitle="Smart Craft Woodworks"
-        metaDescription="About Smart Craft Woodworks"
+        title="SD Finish"
+        mediaTitle="SD Finish"
+        metaDescription="About SD Finish"
       />
       <Navigation activePage="About" />
       <Section variant="gray" fillViewport firstSection>
@@ -33,19 +33,18 @@ export const About: NextPage = () => {
             care.
           </Text>
           <Text t="body2">
-            I founded Smart Craft Woodworks to bridge the gap between
-            contractors, workers, and clients. Too often, I’ve seen contractors
-            promise top-tier work only to outsource labor to inexperienced
-            workers. When you hire me, you’re getting direct, skilled
-            craftsmanship—no middlemen, no shortcuts. I personally oversee every
-            step of the project, ensuring high-quality workmanship and clear
-            communication so you always know what’s happening with your
-            investment.
+            I founded SD Finish to bridge the gap between contractors, workers,
+            and clients. Too often, I’ve seen contractors promise top-tier work
+            only to outsource labor to inexperienced workers. When you hire me,
+            you’re getting direct, skilled craftsmanship—no middlemen, no
+            shortcuts. I personally oversee every step of the project, ensuring
+            high-quality workmanship and clear communication so you always know
+            what’s happening with your investment.
           </Text>
           <div className="imageContainer">
             <Image
               src="/saw.jpeg"
-              alt="About Smart Craft Woodworks"
+              alt="About SD Finish"
               width={400}
               height={400}
               className="image"
@@ -60,9 +59,9 @@ export const About: NextPage = () => {
             cut corners, rush jobs for a paycheck, or compromise on quality.
           </Text>
           <Text t="body2">
-            When you choose Smart Craft Woodworks, you’re choosing a carpenter
-            who values craftsmanship, integrity, and a seamless client
-            experience. Let’s build something great together.
+            When you choose SD Finish, you’re choosing a carpenter who values
+            craftsmanship, integrity, and a seamless client experience. Let’s
+            build something great together.
           </Text>
         </div>
       </Section>

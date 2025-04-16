@@ -19,9 +19,9 @@ export const Home: NextPage = () => {
   return (
     <>
       <PageHead
-        title="Smart Craft Woodworks"
-        mediaTitle="Smart Craft Woodworks"
-        metaDescription="Home page for Smart Craft Woodworks"
+        title="SD Finish"
+        mediaTitle="SD Finish"
+        metaDescription="Home page for SD Finish"
       />
       <Navigation activePage="Home" />
       <Section variant="gray" firstSection>
@@ -33,22 +33,31 @@ export const Home: NextPage = () => {
             alt="smartcraft logo"
           /> */}
           <Text t="h1" align="center">
-            Welcome to Smart Craft Woodworks (San Diego)
+            Welcome to SD Finish Woodworks
           </Text>
           <Text t="body2">
-            At Smart Craft Woodworks, wood isn’t just a material—it’s a passion.
-            As a dedicated craftsman, I specialize in designing, cutting,
-            painting, staining, repairing, and building anything with wood. From
-            small repairs to full-scale projects like decks, doors, flooring,
-            siding, demolition, cabinets, and custom furniture, I bring expert
-            craftsmanship to every job.
+            At SDFinish, we specialize in custom decks, stairs, and high-quality
+            finish work, including doors, trim, and everything wood. Whether
+            it’s a new build or a detailed renovation, our team brings
+            precision, passion, and expert craftsmanship to every project. From
+            outdoor structures to interior finishes, we’re committed to creating
+            durable, beautiful results that stand the test of time.
           </Text>
         </div>
       </Section>
       <Section>
         <div className={styles.section}>
           <Text t="h3" align="center">
-            Services
+            Main Services
+          </Text>
+          <div className="services">
+            <Text>Decks</Text>
+            <Text>Stairs</Text>
+            <Text>Trim</Text>
+            <Text>Doors</Text>
+          </div>
+          <Text t="h3" align="center">
+            Other Services
           </Text>
           <div className="services">
             <Text>Drywall Repair</Text>
@@ -56,18 +65,15 @@ export const Home: NextPage = () => {
             <Text>Painting</Text>
             <Text>Flooring</Text>
             <Text>Framing</Text>
-            <Text>Decks</Text>
-            <Text>Stairs</Text>
             <Text>Roof repair</Text>
             <Text>Junk removal</Text>
-            <Text>Trim</Text>
             <Text>Cabinets</Text>
             <Text>Custom Furniture</Text>
             <Text>Siding</Text>
             <Text>Pergola</Text>
           </div>
           <Text t="h3" align="start">
-            What sets Smart Craft Woodworks apart?
+            What sets SD Finish apart?
           </Text>
 
           <Text>

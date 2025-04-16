@@ -45,7 +45,7 @@ export const PageHead = (props: PageHeadProps) => {
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en" />
       <meta property="og:site_name" content="Atte Builds" />
-      <meta name="theme-color" content="#333" />
+      <meta name="theme-color" content="#004aad" />
       {/* 
       <link
         rel="apple-touch-icon"

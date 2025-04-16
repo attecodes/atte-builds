@@ -10,9 +10,9 @@ export const Shop: NextPage = () => {
   return (
     <>
       <PageHead
-        title="Smart Craft Woodworks"
-        mediaTitle="Smart Craft Woodworks"
-        metaDescription="Shop for Smart Craft Woodworks"
+        title="SD Finish"
+        mediaTitle="SD Finish"
+        metaDescription="Shop for SD Finish"
       />
       <Navigation activePage="Shop" />
       <Section fillViewport variant="gray" firstSection>
@@ -21,15 +21,15 @@ export const Shop: NextPage = () => {
             Shop
           </Text>
           <Text t="body2">
-            At Smart Craft Woodworks, we have the tools, expertise, and
-            craftsmanship to create high-quality cabinets and custom furniture.
-            Using SketchUp 3D, we can bring ideas to life with detailed
-            visualizations before turning them into reality. This also allows us
-            to explore multiple design options before making a final decision.
-            From precise assembly to seamless installation, we take pride in
-            every step of the process. If you have a unique vision or custom
-            request, feel free to reach out through our contact section—we’d
-            love to bring your ideas to life!
+            At SD Finish, we have the tools, expertise, and craftsmanship to
+            create high-quality cabinets and custom furniture. Using SketchUp
+            3D, we can bring ideas to life with detailed visualizations before
+            turning them into reality. This also allows us to explore multiple
+            design options before making a final decision. From precise assembly
+            to seamless installation, we take pride in every step of the
+            process. If you have a unique vision or custom request, feel free to
+            reach out through our contact section—we’d love to bring your ideas
+            to life!
           </Text>
         </div>
       </Section>

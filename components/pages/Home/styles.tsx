@@ -20,6 +20,7 @@ export const section = css`
     justify-items: center;
     align-items: center;
     gap: 20px; /* Adds space between logos */
+    margin-bottom: 2rem;
   }
 
   .logo-container {

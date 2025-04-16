@@ -17,7 +17,7 @@ export const submit = css`
   cursor: pointer;
   border-radius: 0.4rem;
   transition: opacity 0.3s ease 0s;
-  background-color: #2fae52;
+  background-color: #004aad;
   border: none;
 
   &:hover:not(:disabled),
@@ -28,7 +28,7 @@ export const submit = css`
   &,
   &:hover:not(:disabled),
   &:visited {
-    color: black; /* same in darkmode */
+    color: white; /* same in darkmode */
   }
 
   &:disabled {
