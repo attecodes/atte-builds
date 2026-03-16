@@ -1,65 +1,118 @@
+import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
+import ServiceCard from "@/components/ServiceCard";
+import { services } from "@/data/services";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "SD Finish | C-6 Licensed Trim & Millwork",
+  description:
+    "Licensed C-6 trim and millwork contractor serving San Diego County. Crown molding, base molding, wainscoting, coffered ceilings, and custom built-ins.",
+};
+
+export default function HomePage() {
+  const featuredServices = services.slice(0, 3);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      {/* Hero */}
+      <section className="bg-navy text-stone-100 py-24 px-4">
+        <div className="mx-auto max-w-5xl flex flex-col sm:flex-row items-center gap-12">
+          <Image
+            src="/logo.png"
+            alt="SD Finish logo"
+            width={240}
+            height={240}
+            className="shrink-0"
+            priority
+          />
+          <div>
+            <p className="text-brand-green text-sm font-semibold tracking-widest uppercase mb-4">
+              C-6 Licensed &middot; San Diego County
+            </p>
+            <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
+              Custom Finish Carpentry for San Diego Homes
+            </h1>
+            <p className="text-stone-200 text-lg sm:text-xl mb-10 max-w-xl">
+              From custom gates and doors to stairs, decks, trim, and built-ins —
+              we install finish carpentry that&apos;s built to last and crafted
+              to impress. Serving general contractors and homeowners across San
+              Diego County.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/contact"
+                className="px-8 py-3 bg-brand-green text-white font-semibold rounded-md hover:bg-brand-green-dark transition-colors"
+              >
+                Request a Quote
+              </Link>
+              <Link
+                href="/portfolio"
+                className="px-8 py-3 bg-brand-blue text-white font-semibold rounded-md hover:bg-brand-blue-dark transition-colors"
+              >
+                View Our Work
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust bar */}
+      <section className="bg-brand-blue text-white py-4 px-4">
+        <div className="mx-auto max-w-6xl flex flex-wrap justify-center gap-x-10 gap-y-2 text-sm font-medium">
+          <span>&#10003; CA C-6 Licensed &amp; Insured</span>
+          <span>&#10003; San Diego County Service Area</span>
+          <span>&#10003; New Construction &amp; Remodel</span>
+          <span>&#10003; General Contractor Friendly</span>
+        </div>
+      </section>
+
+      {/* Services summary */}
+      <section className="py-20 px-4 bg-stone-50">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-stone-900 mb-3">
+              What We Do
+            </h2>
+            <p className="text-stone-700 max-w-xl mx-auto">
+              Specializing in all phases of interior and exterior trim carpentry
+              — installed right the first time.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featuredServices.map((service) => (
+              <ServiceCard key={service.id} service={service} />
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/services"
+              className="inline-block px-8 py-3 border-2 border-navy text-navy font-semibold rounded-md hover:bg-navy hover:text-white transition-colors"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+              See All Services
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured work CTA */}
+      <section className="py-20 px-4 bg-navy text-stone-100">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            See the Craftsmanship Up Close
+          </h2>
+          <p className="text-stone-200 text-lg mb-8 max-w-xl mx-auto">
+            Browse completed projects across San Diego County — stairs, decks,
+            moulding, doors and more.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/portfolio"
+            className="inline-block px-8 py-3 bg-brand-green text-white font-semibold rounded-md hover:bg-brand-green-dark transition-colors"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            View Portfolio
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
