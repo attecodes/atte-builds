@@ -1,12 +1,19 @@
 import type { Metadata } from 'next'
-import { Geist } from 'next/font/google'
+import { DM_Sans, DM_Serif_Display } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const dmSans = DM_Sans({
+  variable: '--font-dm-sans',
   subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+})
+
+const dmSerif = DM_Serif_Display({
+  variable: '--font-dm-serif',
+  subsets: ['latin'],
+  weight: '400',
 })
 
 export const metadata: Metadata = {
@@ -28,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} font-sans antialiased flex flex-col min-h-screen bg-stone-50`}>
+      <body className={`${dmSans.variable} ${dmSerif.variable} font-sans antialiased flex flex-col min-h-screen bg-stone-50`}>
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

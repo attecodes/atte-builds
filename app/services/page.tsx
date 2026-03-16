@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import ServiceCard from '@/components/ServiceCard'
+import ScrollReveal from '@/components/ScrollReveal'
 import { services } from '@/data/services'
 
 export const metadata: Metadata = {
@@ -25,8 +26,10 @@ export default function ServicesPage() {
 
         {/* Service cards */}
         <div className="grid sm:grid-cols-2 gap-6 mb-16">
-          {services.map((service) => (
-            <ServiceCard key={service.id} service={service} />
+          {services.map((service, i) => (
+            <ScrollReveal key={service.id} delay={((i % 2) * 100) as 0 | 100 | 200 | 300 | 400}>
+              <ServiceCard service={service} />
+            </ScrollReveal>
           ))}
         </div>
 
