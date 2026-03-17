@@ -138,7 +138,7 @@ export default function Gallery({ photos }: Props) {
 
           {/* Image */}
           <div
-            className="relative w-full max-w-4xl mx-16 aspect-[4/3]"
+            className="relative w-full h-[75vh] sm:h-auto mx-2 sm:max-w-4xl sm:mx-16 sm:aspect-[4/3]"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
