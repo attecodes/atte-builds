@@ -5,13 +5,49 @@ import ScrollReveal from '@/components/ScrollReveal'
 import { services } from '@/data/services'
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Trim & Millwork Services — Crown Molding, Built-Ins & More',
   description:
-    'Trim and millwork services in San Diego County: crown molding, base molding, wainscoting, door and window casing, coffered ceilings, and custom built-ins.',
+    'Full-service trim and millwork contractor in San Diego County: custom gates and doors, built-ins, tongue-and-groove ceilings, staircases, deck railings, siding, and all interior trim profiles.',
+  openGraph: {
+    url: '/services',
+  },
+}
+
+const offerCatalogJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'OfferCatalog',
+  name: 'Trim & Millwork Services — SD Finish',
+  provider: {
+    '@type': 'HomeAndConstructionBusiness',
+    name: 'SD Finish',
+    url: 'https://sdfinish.com',
+  },
+  itemListElement: services.map((service, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'Service',
+      name: service.title,
+      description: service.description,
+      provider: {
+        '@type': 'HomeAndConstructionBusiness',
+        name: 'SD Finish',
+      },
+      areaServed: {
+        '@type': 'AdministrativeArea',
+        name: 'San Diego County, California',
+      },
+    },
+  })),
 }
 
 export default function ServicesPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(offerCatalogJsonLd) }}
+      />
     <div className="py-16 px-4">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
@@ -54,5 +90,6 @@ export default function ServicesPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

@@ -1,15 +1,8 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ServiceCard from "@/components/ServiceCard";
 import ScrollReveal from "@/components/ScrollReveal";
 import { services } from "@/data/services";
-
-export const metadata: Metadata = {
-  title: "SD Finish | C-6 Licensed Trim & Millwork",
-  description:
-    "Licensed C-6 trim and millwork contractor serving San Diego County. Crown molding, base molding, wainscoting, coffered ceilings, and custom built-ins.",
-};
 
 export default function HomePage() {
   const featuredServices = services.slice(0, 3);

@@ -3,9 +3,12 @@ import Gallery from "@/components/Gallery";
 import { photos } from "@/data/portfolio";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: 'Project Portfolio — San Diego Trim & Millwork',
   description:
-    "Browse completed projects across San Diego County — stairs, decks, moulding, doors and more.",
+    'Browse completed trim and millwork projects across San Diego County — custom gates, built-ins, tongue-and-groove ceilings, staircases, deck railings, and more.',
+  openGraph: {
+    url: '/portfolio',
+  },
 };
 
 export default function PortfolioPage() {
