@@ -25,6 +25,16 @@ export default function ContactPage() {
           <dl className="space-y-6 text-stone-800">
             <div>
               <dt className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-1">
+                Phone
+              </dt>
+              <dd className="font-medium">
+                <a href="tel:+16192460025" className="hover:text-brand-green transition-colors">
+                  (619) 246-0025
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-1">
                 Service Area
               </dt>
               <dd className="font-medium">San Diego County, CA</dd>

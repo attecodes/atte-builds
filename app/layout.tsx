@@ -32,6 +32,7 @@ const localBusinessJsonLd = {
   '@type': 'HomeAndConstructionBusiness',
   name: 'SD Finish',
   url: SITE_URL,
+  telephone: '+1-619-246-0025',
   description:
     'C-6 licensed trim and millwork contractor serving San Diego County. Crown molding, base molding, wainscoting, coffered ceilings, custom built-ins, stairs, custom gates, and exterior siding.',
   areaServed: {

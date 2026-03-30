@@ -19,22 +19,30 @@ export default function Nav() {
         <Link href="/" className="text-xl font-bold tracking-tight hover:text-brand-green transition-colors">
           SD Finish
         </Link>
-        <nav>
-          <ul className="flex gap-6 text-sm font-medium">
-            {links.map(({ href, label }) => (
-              <li key={href}>
-                <Link
-                  href={href}
-                  className={`transition-colors hover:text-brand-green ${
-                    pathname === href ? 'text-brand-green' : 'text-stone-200'
-                  }`}
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className="flex items-center gap-6">
+          <a
+            href="tel:+16192460025"
+            className="hidden sm:block text-sm font-semibold text-brand-green hover:text-white transition-colors"
+          >
+            (619) 246-0025
+          </a>
+          <nav>
+            <ul className="flex gap-6 text-sm font-medium">
+              {links.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className={`transition-colors hover:text-brand-green ${
+                      pathname === href ? 'text-brand-green' : 'text-stone-200'
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
   )

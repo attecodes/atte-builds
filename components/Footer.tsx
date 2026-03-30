@@ -49,6 +49,14 @@ export default function Footer() {
           </a>
         </div>
 
+        {/* Phone */}
+        <a
+          href="tel:+16192460025"
+          className="text-stone-200 font-semibold text-lg hover:text-brand-green transition-colors"
+        >
+          (619) 246-0025
+        </a>
+
         {/* License + copyright */}
         <div className="text-center text-sm space-y-1">
           <p>CA Contractor License C-6 &mdash; Cabinet, Millwork &amp; Finish Carpentry</p>
