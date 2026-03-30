@@ -1,0 +1,17 @@
+{
+  "name": "SD Finish",
+  "short_name": "SD Finish",
+  "description": "C-6 licensed trim and millwork contractor serving San Diego County",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0f2437",
+  "theme_color": "#0f2437",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
