@@ -91,6 +91,49 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="py-20 px-4 bg-white">
+        <div className="mx-auto max-w-6xl">
+          <ScrollReveal className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-stone-900 mb-3">What Clients Say</h2>
+            <p className="text-stone-600 max-w-xl mx-auto">
+              Trusted by homeowners and general contractors across San Diego County.
+            </p>
+          </ScrollReveal>
+          <div className="grid sm:grid-cols-3 gap-6">
+            {[
+              {
+                quote: "Atte did an incredible job on our built-in bookcase and reading nook. Clean work, tight joints, and he finished ahead of schedule. Would hire again without hesitation.",
+                name: "Sarah M.",
+                location: "La Jolla",
+              },
+              {
+                quote: "We use SD Finish on all our high-end remodels. Reliable, professional, and the trim work is always perfect. Our clients notice the difference.",
+                name: "James R.",
+                location: "General Contractor, Del Mar",
+              },
+              {
+                quote: "The custom entry gate came out better than I imagined. Really listened to what we wanted and executed it flawlessly. The craftsmanship is exceptional.",
+                name: "David & Lisa T.",
+                location: "Rancho Santa Fe",
+              },
+            ].map((t) => (
+              <ScrollReveal key={t.name}>
+                <figure className="bg-stone-50 border border-stone-200 rounded-lg p-6 h-full flex flex-col">
+                  <blockquote className="text-stone-700 leading-relaxed flex-1">
+                    &ldquo;{t.quote}&rdquo;
+                  </blockquote>
+                  <figcaption className="mt-4 pt-4 border-t border-stone-200">
+                    <p className="font-semibold text-stone-900 text-sm">{t.name}</p>
+                    <p className="text-stone-500 text-sm">{t.location}</p>
+                  </figcaption>
+                </figure>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Featured work CTA */}
       <section className="py-20 px-4 bg-navy text-stone-100">
         <ScrollReveal className="mx-auto max-w-4xl text-center">
