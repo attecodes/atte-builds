@@ -34,7 +34,7 @@ const localBusinessJsonLd = {
   url: SITE_URL,
   telephone: '+1-619-246-0025',
   description:
-    'C-6 licensed trim and millwork contractor serving San Diego County. Crown molding, base molding, wainscoting, coffered ceilings, custom built-ins, stairs, custom gates, and exterior siding.',
+    'Trim and millwork contractor serving San Diego County. Crown molding, base molding, wainscoting, coffered ceilings, custom built-ins, stairs, custom gates, and exterior siding.',
   areaServed: {
     '@type': 'AdministrativeArea',
     name: 'San Diego County, California',
@@ -56,7 +56,6 @@ const localBusinessJsonLd = {
     'deck railings',
     'siding installation',
   ],
-  license: 'California C-6 Cabinet, Millwork & Finish Carpentry',
   sameAs: [
     'https://www.youtube.com/@SDFinish',
     'https://www.instagram.com/sdfinishco',
@@ -66,11 +65,11 @@ const localBusinessJsonLd = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'SD Finish | C-6 Licensed Trim & Millwork — San Diego',
+    default: 'SD Finish | Custom Trim & Millwork — San Diego',
     template: '%s | SD Finish',
   },
   description:
-    'C-6 licensed trim and millwork contractor serving San Diego County. Crown molding, base molding, wainscoting, coffered ceilings, custom built-ins, stairs, custom gates, and exterior siding.',
+    'Trim and millwork contractor serving San Diego County. Crown molding, base molding, wainscoting, coffered ceilings, custom built-ins, stairs, custom gates, and exterior siding.',
   keywords: [
     'trim contractor San Diego',
     'millwork contractor San Diego',
@@ -79,7 +78,6 @@ export const metadata: Metadata = {
     'wainscoting contractor San Diego',
     'custom built-ins San Diego',
     'coffered ceiling contractor',
-    'C-6 licensed contractor San Diego County',
     'finish carpentry San Diego',
     'door casing San Diego',
     'custom gates San Diego',
@@ -94,16 +92,16 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: '/',
     siteName: 'SD Finish',
-    title: 'SD Finish | C-6 Licensed Trim & Millwork — San Diego',
+    title: 'SD Finish | Custom Trim & Millwork — San Diego',
     description:
-      'C-6 licensed trim and millwork contractor serving San Diego County. Crown molding, base molding, wainscoting, coffered ceilings, custom built-ins, stairs, custom gates, and exterior siding.',
+      'Trim and millwork contractor serving San Diego County. Crown molding, base molding, wainscoting, coffered ceilings, custom built-ins, stairs, custom gates, and exterior siding.',
     images: [OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SD Finish | C-6 Licensed Trim & Millwork — San Diego',
+    title: 'SD Finish | Custom Trim & Millwork — San Diego',
     description:
-      'C-6 licensed trim and millwork contractor serving San Diego County. Crown molding, wainscoting, custom built-ins, stairs, and more.',
+      'Trim and millwork contractor serving San Diego County. Crown molding, wainscoting, custom built-ins, stairs, and more.',
     images: [OG_IMAGE.url],
   },
   icons: {

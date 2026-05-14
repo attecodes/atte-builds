@@ -57,9 +57,8 @@ export default function Footer() {
           (619) 246-0025
         </a>
 
-        {/* License + copyright */}
+        {/* Copyright */}
         <div className="text-center text-sm space-y-1">
-          <p>CA Contractor License C-6 &mdash; Cabinet, Millwork &amp; Finish Carpentry</p>
           <p>San Diego County</p>
         </div>
         <p className="text-stone-500 text-xs">

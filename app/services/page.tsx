@@ -69,16 +69,15 @@ export default function ServicesPage() {
           ))}
         </div>
 
-        {/* License callout */}
+        {/* CTA callout */}
         <div className="bg-navy text-stone-100 rounded-xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
             <p className="text-brand-green text-sm font-semibold tracking-widest uppercase mb-1">
-              Licensed &amp; Insured
+              Insured
             </p>
-            <h2 className="text-2xl font-bold mb-2">California C-6 Contractor</h2>
+            <h2 className="text-2xl font-bold mb-2">San Diego Trim & Millwork</h2>
             <p className="text-stone-200 max-w-lg">
-              Cabinet, Millwork &amp; Finish Carpentry license. Available for new construction,
-              remodel, and commercial projects throughout San Diego County.
+              Available for new construction, remodel, and commercial projects throughout San Diego County.
             </p>
           </div>
           <Link

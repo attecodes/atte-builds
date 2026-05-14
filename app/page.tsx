@@ -22,7 +22,7 @@ export default function HomePage() {
           />
           <div>
             <p className="text-brand-green text-sm font-semibold tracking-widest uppercase mb-4 animate-fade-in-up">
-              C-6 Licensed &middot; San Diego County
+              San Diego County
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6 animate-fade-in-up animation-delay-100">
               Custom Finish Carpentry for San Diego Homes
@@ -54,7 +54,7 @@ export default function HomePage() {
       {/* Trust bar */}
       <section className="bg-brand-blue text-white py-4 px-4">
         <div className="mx-auto max-w-6xl flex flex-wrap justify-center gap-x-10 gap-y-2 text-sm font-medium">
-          <span>&#10003; CA C-6 Licensed &amp; Insured</span>
+          <span>&#10003; Insured</span>
           <span>&#10003; San Diego County Service Area</span>
           <span>&#10003; New Construction &amp; Remodel</span>
           <span>&#10003; General Contractor Friendly</span>

@@ -4,7 +4,7 @@ import ContactForm from '@/components/ContactForm'
 export const metadata: Metadata = {
   title: 'Get a Quote — Contact SD Finish',
   description:
-    'Request a quote from SD Finish, a C-6 licensed trim and millwork contractor. Serving general contractors and homeowners throughout San Diego County.',
+    'Request a quote from SD Finish, a trim and millwork contractor. Serving general contractors and homeowners throughout San Diego County.',
   openGraph: {
     url: '/contact',
   },
@@ -38,12 +38,6 @@ export default function ContactPage() {
                 Service Area
               </dt>
               <dd className="font-medium">San Diego County, CA</dd>
-            </div>
-            <div>
-              <dt className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-1">
-                License
-              </dt>
-              <dd className="font-medium">California C-6 — Cabinet, Millwork &amp; Finish Carpentry</dd>
             </div>
             <div>
               <dt className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-1">
