@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Get a Quote — Contact SD Finish',
+  title: 'Contact SD Finish — San Diego Finish Carpentry',
   description:
-    'Request a quote from SD Finish, a trim and millwork contractor. Serving general contractors and homeowners throughout San Diego County.',
+    'Get in touch with SD Finish, a trim and millwork contractor serving general contractors and homeowners throughout San Diego County.',
   openGraph: {
     url: '/contact',
   },

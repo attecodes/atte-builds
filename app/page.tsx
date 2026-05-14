@@ -38,7 +38,7 @@ export default function HomePage() {
                 href="/contact"
                 className="px-8 py-3 bg-brand-green text-white font-semibold rounded-md hover:bg-brand-green-dark transition-colors"
               >
-                Request a Quote
+                Contact for Consultation
               </Link>
               <Link
                 href="/portfolio"

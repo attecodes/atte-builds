@@ -85,7 +85,7 @@ export default function ServicesPage() {
             href="/contact"
             className="shrink-0 px-8 py-3 bg-brand-green text-white font-semibold rounded-md hover:bg-brand-green-dark transition-colors whitespace-nowrap"
           >
-            Request a Quote
+            Contact for Consultation
           </Link>
         </div>
       </div>
