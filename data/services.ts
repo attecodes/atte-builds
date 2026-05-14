@@ -33,11 +33,11 @@ export const services: Service[] = [
     id: "trim",
     title: "Finish Trim & Ceilings",
     description:
-      "Interior finish work that ties a home together — from tongue-and-groove wood ceilings and decorative beams to wainscoting and all trim profiles.",
+      "Interior finish work that ties a room together — picture-frame accent walls, tongue-and-groove ceilings, wainscoting, and all trim profiles installed clean.",
     details: [
+      "Board-and-batten and picture-frame accent walls",
       "Tongue-and-groove plank ceiling installation",
-      "Decorative wood beam installation on vaulted ceilings",
-      "Wainscoting, shiplap, and accent wall paneling",
+      "Wainscoting, shiplap, and wall paneling",
       "Base, crown, casing, and all trim profiles",
       "Interior and exterior soffit and porch ceiling work",
     ],

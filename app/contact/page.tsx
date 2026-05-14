@@ -46,11 +46,11 @@ export default function ContactPage() {
               <dd>
                 <ul className="space-y-1 text-stone-700">
                   {[
-                    'Base &amp; crown molding',
-                    'Door &amp; window casing',
-                    'Wainscoting &amp; paneling',
-                    'Coffered ceilings',
-                    'Built-ins &amp; custom millwork',
+                    'Custom gates &amp; doors',
+                    'Stairs, decks &amp; pergolas',
+                    'Handrails &amp; deck railings',
+                    'Accent walls &amp; interior trim',
+                    'Built-ins &amp; closet systems',
                   ].map((item) => (
                     <li key={item} dangerouslySetInnerHTML={{ __html: `&#8212; ${item}` }} />
                   ))}

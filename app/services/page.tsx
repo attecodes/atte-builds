@@ -54,9 +54,9 @@ export default function ServicesPage() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-stone-900 mb-3">Services</h1>
           <p className="text-stone-700 max-w-2xl text-lg">
-            We specialize in all phases of interior finish carpentry — from simple base molding to
-            fully custom built-ins. Every job is completed to exacting standards with clean details
-            and tight joints.
+            We handle interior and exterior finish carpentry — from accent walls and trim profiles
+            to custom gates, decks, stairs, and pergolas. Every job is completed to exacting
+            standards with clean details and tight joints.
           </p>
         </div>
 
@@ -73,11 +73,12 @@ export default function ServicesPage() {
         <div className="bg-navy text-stone-100 rounded-xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
             <p className="text-brand-green text-sm font-semibold tracking-widest uppercase mb-1">
-              Insured
+              San Diego County
             </p>
-            <h2 className="text-2xl font-bold mb-2">San Diego Trim & Millwork</h2>
+            <h2 className="text-2xl font-bold mb-2">Ready to Start Your Project?</h2>
             <p className="text-stone-200 max-w-lg">
-              Available for new construction, remodel, and commercial projects throughout San Diego County.
+              We take on new construction, remodels, and commercial work throughout San Diego County.
+              Reach out for a free quote.
             </p>
           </div>
           <Link

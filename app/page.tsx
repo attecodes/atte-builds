@@ -54,8 +54,8 @@ export default function HomePage() {
       {/* Trust bar */}
       <section className="bg-brand-blue text-white py-4 px-4">
         <div className="mx-auto max-w-6xl flex flex-wrap justify-center gap-x-10 gap-y-2 text-sm font-medium">
-          <span>&#10003; Insured</span>
           <span>&#10003; San Diego County Service Area</span>
+          <span>&#10003; Residential &amp; Commercial</span>
           <span>&#10003; New Construction &amp; Remodel</span>
           <span>&#10003; General Contractor Friendly</span>
         </div>
